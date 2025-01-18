@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="./styledash.css">
+	<title>Dashboard</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="./dash.html" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">MY BUDGET</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="./dash.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="D:\Project\GUI Project\Add\Add.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Add </span>
+				</a>
+			</li>
+			<li>
+				<a href="../Analytics/Analytics.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Analytics</span>
+				</a>
+			</li>
+			<li>
+				<a href="../Notification/Notificatin.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Notification</span>
+				</a>
+			</li>
+			<li>
+				<a href="../Profile/profile.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Profile</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			
+			<li>
+				<a href="../Home.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="../Notification/Notificatin.html" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="./Images/user_pic.jpg">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-dollar-circle' ></i>
+					<span class="text">
+						<h3>$ 1500</h3>
+						<p>Balance</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-dollar-circle' ></i>
+					<span class="text">
+						<h3>$ 3000</h3>
+						<p>Total Incomes</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-dollar-circle' ></i>
+					<span class="text">
+						<h3>$ 1500</h3>
+						<p>Total Expenses</p>
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Recent Expenses</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>User</th>
+								<th>Date </th>
+								<th>Time</th>
+								<th>Amount</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="./Images/user_pic.jpg">
+									
+								</td>
+								<td>31-01-2024</td>
+								<td>10.00 a.m</td>
+								<td>$10</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="./Images/user_pic.jpg">
+									
+								</td>
+								<td>31-01-2024</td>
+								<td>4.20 p.m</td>
+								<td>$30</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="./Images/user_pic.jpg">
+									
+								</td>
+								<td>30-01-2024</td>
+								<td>8.00 a.m</td>
+								<td>$99</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="./Images/user_pic.jpg">
+                                </td>
+								<td>30-01-2024</td>
+								<td>5.40 p.m</td>
+								<td>$500</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="./Images/user_pic.jpg">
+									
+								</td>
+								<td>29-01-2024</td>
+								<td>11.55 a.m</td>
+								<td>$40</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="income">
+					<div class="head">
+						<h3>Recent income</h3>
+						<i  class='bx bx-plus' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<ul class="income-list">
+						<li class="completed">
+							<p>My Salary</p>
+							<p>$1500</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>From Farm</p>
+							<p>$200</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						
+						<li class="completed">
+							<p>From Shop</p>
+							<p>$300</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>Criptocur.</p>
+							<p>$1000</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="not-completed">
+							<p>From O/T</p>
+							<p>$100</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="./scriptdash.js"></script>
+</body>
+</html>

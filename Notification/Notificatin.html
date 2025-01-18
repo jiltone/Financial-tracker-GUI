@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="./Notistyle.css">
+	<title>Notification</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="./dash.html" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">MY BUDGET</span>
+		</a>
+		<ul class="side-menu top">
+			<li >
+				<a href="../Dashboard/dash.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="../Add/Add.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Add </span>
+				</a>
+			</li>
+			<li>
+				<a href="../Analytics/Analytics.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Analytics</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="../Notification/Notificatin.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Notification</span>
+				</a>
+			</li>
+			<li>
+				<a href="../Profile/profile.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Profile</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			
+			<li>
+				<a href="../Home.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="./Notificatin.html" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="./Images/user_pic.jpg">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Notification</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Notification</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="../Dashboard/dash.html">Home</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Recent Notifications</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th>Time</th>
+								<th></th>
+								<th>Date </th>
+								<th></th>
+								<th>Notificatin</th>
+								
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><i class="bx bxs-message-dots"></i></td>
+								<td>
+									<p>8.00 a.m</p>
+								</td>
+								<td></td>
+								<td>31-01-2024</td>
+								<td> |</td>
+								<td><span class="status">"Financial Goal Reminder: Only $200 more to reach your vacation savings goal. Keep it up!"</span></td>
+							</tr>
+							<tr>
+								<td><i class="bx bxs-message-dots"></i></td>
+								<td>
+									
+									<p>10.00 a.m</p>
+								</td>
+								<td></td>
+								<td>31-01-2024</td>
+								<td> |</td>
+								<td><span class="status">"Security Alert: New device detected. If this wasn't you, please review your account activity."</span></td>
+							</tr>
+							<tr>
+								<td><i class="bx bxs-message-dots"></i></td>
+								<td>
+									
+									<p>9.00 a.m</p>
+								</td>
+								<td></td>
+								<td>30-01-2024</td>
+								<td> |</td>
+								<td><span class="status">"Congratulations! You've reached a savings milestone. You now have $1,000 in your emergency fund."</span></td>
+							</tr>
+							<tr>
+								<td><i class="bx bxs-message-dots"></i></td>
+								<td>
+									
+									<p>4.00 p.m</p>
+								</td>
+								<td></td>
+								<td>29-01-2024</td>
+								<td> |</td>
+								<td><span class="status">"Tip: Consider packing lunch this week to save money and stay on budget."</span></td>
+							</tr>
+							<tr>
+								<td><i class="bx bxs-message-dots"></i></td>
+								<td>
+									<p>2.00 p.m</p>
+								</td>
+								<td></td>
+								<td>28-01-2024</td>
+								<td> |</td>
+								<td><span class="status">"Expense Report: This month, you spent the most on 'Shopping' category. Consider adjusting your budget."</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="./scriptnoti.js"></script>
+</body>
+</html>
